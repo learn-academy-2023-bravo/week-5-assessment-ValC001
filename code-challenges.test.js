@@ -10,22 +10,60 @@
 // Reminder: The test will call your function
 // Run the file with the following command: $ yarn jest
 
-// --------------------1) Create a function that takes in a string and returns a string with a coded message. The coded message converts "a" to 4, "e" to 3, "i" to 1, and "o" to 0.
-
-// a) Create a test with expect statements using the variables provided.
-
+//1) Create a function that takes in a string and returns a string with a coded message. The coded message converts "a" to 4, "e" to 3, "i" to 1, and "o" to 0.
 const secretCodeWord1 = "Lackadaisical"
 // Expected output: "L4ck4d41s1c4l"
 const secretCodeWord2 = "Gobbledygook"
 // Expected output: "G0bbl3dyg00k"
 const secretCodeWord3 = "Eccentric"
 // Expected output: "3cc3ntr1c"
+// a) Create a test with expect statements using the variables provided.
+//Pseudo code
+// Create a describe statement 
+describe ("messageCoder", () => {
+    it("takes in a function and returns a string with a coded message. The coded message converts "a" to 4, "e" to 3, "i" to 1, and "o" to 0.",  () =>{
+        const secrectCodeWord1 = "Lackadaisical"
+        const secretCodeWord2 = "Gobbledygook"
+        const secretCodeWord3 = "Eccentric"
+         
+        expect(messageCoder(secrectCodeWord1)).toEqual("L4ck4d41s1c4l")
+        expect(messageCoder(secrectCodeWord2)).toEqual("Gobbledygook")
+        expect(messageCoder(secrectCodeWord3)).toEqual("3cc3ntr1c")
+    })
+})
+
+
+
+
 
 // b) Create the function that makes the test pass.
 
-// --------------------2) Create a function that takes in an array of words and a single letter and returns an array of all the words containing that particular letter.
 
-// a) Create a test with expects statement using the variable provided.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 2) Create a function that takes in an array of words and a single letter and returns an array of all the words containing that particular letter.
+
 
 const fruitArray = ["Mango", "Cherry", "Apricot", "Blueberry", "Peach", "Kiwi"]
 
@@ -34,9 +72,38 @@ const letterA = "a"
 const letterE = "e"
 // Expected output: ["Cherry", "Blueberry", "Peach"]
 
+// a) Create a test with expects statement using the variable provided.
+describe("vowelFavorerer", ()=> {
+    it("Takes in an array of words and a single letter and returns an array of all the words containing that particular letter",()=>{
+        
+        const fruitArray = ["Mango", "Cherry", "Apricot", "Blueberry", "Peach", "Kiwi"]
+        const letterA = "a"
+        const letterE = "e"
+
+        expect(vowelFavorerer(letterA)).toEqual("Mango", "Apricot", "Peach")
+        expect(vowelFavorerer(letterE)).toEqual("Cherry", "Blueberry", "Peach")
+    })
+})
 // b) Create the function that makes the test pass.
 
-// --------------------3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a "full house". A full house is exactly one pair and one three of a kind.
+//Psuedo code 
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a "full house". A full house is exactly one pair and one three of a kind.
 
 // a) Create a test with expect statements using the variable provided.
 
