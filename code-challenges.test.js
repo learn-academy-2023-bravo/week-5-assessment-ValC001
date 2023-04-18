@@ -21,16 +21,16 @@ const secretCodeWord3 = "Eccentric"
 //Pseudo code
 // Create a describe statement 
 describe ("messageCoder", () => {
-//     it("takes in a function and returns a string with a coded message. The coded message converts "a" to 4, "e" to 3, "i" to 1, and "o" to 0.",  () =>{
-//         const secrectCodeWord1 = "Lackadaisical"
-//         const secretCodeWord2 = "Gobbledygook"
-//         const secretCodeWord3 = "Eccentric"
+    it("takes in a function and returns a string with a coded message. The coded message converts a to 4, e to 3, i to 1, and o to 0.",  () =>{
+        const secrectCodeWord1 = "Lackadaisical"
+        const secretCodeWord2 = "Gobbledygook"
+        const secretCodeWord3 = "Eccentric"
          
-//         expect(messageCoder(secrectCodeWord1)).toEqual("L4ck4d41s1c4l")
-//         expect(messageCoder(secrectCodeWord2)).toEqual("Gobbledygook")
-//         expect(messageCoder(secrectCodeWord3)).toEqual("3cc3ntr1c")
-//     })
-// })
+        expect(messageCoder(secrectCodeWord1)).toEqual("L4ck4d41s1c4l")
+        expect(messageCoder(secrectCodeWord2)).toEqual("Gobbledygook")
+        expect(messageCoder(secrectCodeWord3)).toEqual("3cc3ntr1c")
+    })
+})
 
 // FAIL  ./code-challenges.test.js
 // ● Test suite failed to run
@@ -140,4 +140,43 @@ const hand3 = [5, 5, 5, 5, 4]
 const hand4 = [7, 2, 7, 2, 7]
 // Expected output: true
 
-// b) Create the function that makes the test pass.
+
+// a) Create a test with expect statements using the variable provided.
+describe("fullHouse", ()=> {
+    it("takes in an array of 5 numbers and determines whether or not the array is a full house. A full house is exactly one pair and one three of a kind.",()=>{
+        
+        const hand1 = [5, 5, 5, 3, 3]
+        const hand2 = [5, 5, 3, 3, 4]
+        const hand3 = [5, 5, 5, 5, 4]
+        const hand4 = [7, 2, 7, 2, 7]
+        expect(fullHouse(hand1)).toEqual("true")
+        expect(fullHouse(hand2)).toEqual("false")
+        expect(fullHouse(hand3)).toEqual("false")
+        expect(fullHouse(hand4)).toEqual("true")
+    
+    })
+ })
+ // b) Create the function that makes the test pass.
+ // I'm confused on how to make this work, I know I have to use if/ else statements but the numbers parts elude me.
+
+ const fullHouse('hand1')=> {
+    for (let i = 0; i < 5; i++) {
+        if fullHouse('hand1') === {
+            return true
+    }
+            else if fullHouse('hand1') === {
+            return false
+            }
+        
+        }
+    }
+    
+
+ 
+       
+    
+		
+    
+
+
+   
