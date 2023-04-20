@@ -11,7 +11,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 Your answer: Calling a super is like using a youtube minecraft tutorial(class) to build a house /mansion as a starting point for how you want it to look like but modifying based on what you want. 
 
 
-Researched answer: "When a method with arguments is overridden by one of its child classes then a call to super without any argument in the child method will automatically pass the arguments of the child method to the parent method."
+Researched answer: What a call to super does is that when called in the child method without any arguments automatically transfers those arguments to the parent method when a method contains parameters and one of its child classes overrides it.
 
 
 
@@ -22,7 +22,7 @@ Researched answer: "When a method with arguments is overridden by one of its chi
 
 Your answer: In ruby its a packaged library or application that is used to manage & distribute your projects in ruby.
 
-Researched answer: "A gem is a bunch of perfectly packaged Ruby code that gives you access to custom methods somebody else wrote. Gems just make the process of sharing code much easier. The custom methods inside of gems typically have specific functionalities."
+Researched answer: Per my research ,a "gem" is a collection of impeccably  packaged Ruby code that will grant you/users access to unique methods created by others. Basically, they simplify the exchange of code. There's also custom methods in gems  that typically serve particular purposes.
 
 
 
@@ -30,10 +30,10 @@ Researched answer: "A gem is a bunch of perfectly packaged Ruby code that gives 
 
 3. What is a relational database? Are there other kinds of databases?
 
-Your answer: A relational database organizes data into tables with a predefined structure, the tables in this structure all represeent specific type of data. 
+Your answer: A relational database is like building a storage room in minecraft. You'll have different storage containers that contain different things like one can store stone and another diamonds. A relational database works like that , everything will have its own table/coloumn etc.
 
-Researched answer: "
-A relational database is a type of database that stores and provides access to data points that are related to one another"
+Researched answer: 
+A relational database is a type of database that stores and provides access to data points that are related to one another.
 
 
 
@@ -73,7 +73,10 @@ D= DELETE
 
 Researched answer:
 
-
+C= CREATE - Post , It is used to create new resources
+R= READ - Get , It retrieves resource representations
+U= UPDATE- Put  , Used to update current resources or creates new resources
+D= DELETE- Delete , deletes resources
 
 
 

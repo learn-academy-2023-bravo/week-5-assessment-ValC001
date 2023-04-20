@@ -17,10 +17,31 @@
 # Save the results of the filtered out elements into a new array called results that'll print out the well results.
 
 beverages_array = ['coffee', 'tea', 'juice', 'water', 'soda water']
-result = beverages_array.select{ |beverage| beverage.include?('t')}
-print result
+# result = beverages_array.select{ |beverage| beverage.include?('t')}
+# print result
     
-#This code works!. Just change the letter that will be used to filter out the words that don't have it.
+#This code works!. Just change the letter that will be used to filter out the words that don't have it
+beverages_array = ['coffee', 'tea', 'juice', 'water', 'soda water']
+
+
+#Psuedo code
+#This is first attempt at making it into a def method
+# def  print_o(beverages_array)
+#    print_o.include?"o"
+# end
+# def print_t(beverages_array)
+#     print_t.include?"t"
+# end
+
+
+#Psuedo code
+#This is second attempt at making it into a def method. This one works.
+def print_o(beverages_array)
+    result = beverages_array.select{ |beverage| beverage.include?('o')}
+    print result
+end
+print_o(beverages_array)
+
 
 
 
@@ -41,9 +62,11 @@ print result
 # Print out the new array with the sorted values.
 
 us_states = { northwest: ['Washington', 'Oregon', 'Idaho'], southwest: ['California', 'Arizona', 'Nevada'], notheast: ['Maine', 'New Hampshire', 'Rhode Island'] }
+def states(alphabatized_states)
+    alphabatized_states = us_states.values.flatten.sort
+    puts alphabatized_states
+end
 
-alphabatized_states = us_states.values.flatten.sort
-puts alphabatized_states
 
 
 
@@ -53,8 +76,19 @@ puts alphabatized_states
 # Expected output example: 'The Trek bike has 2 wheels and is going 0 mph.'
 
 
-
-
+class Bike
+    attr_accessor :model, :wheels , :current_speed
+    def Initialized(model , wheels = 2 ,current_speed =0)
+        @model=model
+        @wheels=wheels
+        @current_speed=current_speed
+    end
+    def bike_info 
+    "The #{@Model}bike has #{@wheels} wheels  and is going #{@current_speed} mph."
+    end
+end
+my_bike = Bike.new
+Bike.Initialized = "Trek"
 
 
 # 3b) Add the ability to pedal faster and brake. The pedal_faster method should increase the speed by a given amount. The brake method should decrease the speed by a given amount. The bike cannot go negative speeds.
@@ -63,3 +97,4 @@ puts alphabatized_states
 # Expected output example: my_bike.pedal_faster(18) => 28
 # Expected output example: my_bike.brake(5) => 23
 # Expected output example: my_bike.brake(25) => 0
+

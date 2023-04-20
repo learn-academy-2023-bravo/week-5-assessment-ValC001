@@ -56,9 +56,16 @@ describe ("messageCoder", () => {
 // b) Create the function that makes the test pass.
 
 
+//Psuedo Code
+//I can use replace method to replace letters with numbers. I can do an if else method to detect if it has certain letter and if it does replace it.
+function messageCoder (secrectCodeWord1){
+    const messageCoder = secrectCodeWord1
+    if (a >= '4' && e <= '3' && i <="1" && o<="0" {
+        return a.messageCoder() && e.messageCoder() && i.messageCoder()&& o.messageCoder() 
+    }
+    return c;
 
-
-
+)}
 
 
 
@@ -157,7 +164,7 @@ describe("fullHouse", ()=> {
     })
  })
  // b) Create the function that makes the test pass.
- // I'm confused on how to make this work, I know I have to use if/ else statements but the numbers parts elude me.
+ // I'm confused on how to make this work, I know I have to use if/ else statements but how to make it detect pairs I don't know how.
 
  const fullHouse('hand1')=> {
     for (let i = 0; i < 5; i++) {
