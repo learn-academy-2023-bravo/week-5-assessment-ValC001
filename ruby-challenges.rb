@@ -78,7 +78,7 @@ end
 
 class Bike
     attr_accessor :model, :wheels , :current_speed
-    def Initialized(model , wheels = 2 ,current_speed =0)
+    def initialize(model , wheels = 2 ,current_speed =0)
         @model=model
         @wheels=wheels
         @current_speed=current_speed
@@ -88,7 +88,7 @@ class Bike
     end
 end
 my_bike = Bike.new
-Bike.Initialized = "Trek"
+Bike.initialize= "Trek"
 
 
 # 3b) Add the ability to pedal faster and brake. The pedal_faster method should increase the speed by a given amount. The brake method should decrease the speed by a given amount. The bike cannot go negative speeds.
@@ -97,4 +97,5 @@ Bike.Initialized = "Trek"
 # Expected output example: my_bike.pedal_faster(18) => 28
 # Expected output example: my_bike.brake(5) => 23
 # Expected output example: my_bike.brake(25) => 0
+
 
