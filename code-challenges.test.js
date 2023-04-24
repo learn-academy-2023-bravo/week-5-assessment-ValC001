@@ -188,14 +188,14 @@ const hand4 = [7, 2, 7, 2, 7]
 
 
  // b) Create the function that makes the test pass.
- // I'm confused on how to make this work, I know I have to use if/ else statements but how to make it detect pairs I don't know how.
+ // I'm confused on how to make this work, I know I have to use if/ else statements but how to make it detect pairs I don't know how.I wrote down in the () where the statement that determines if its a full house should go but don't know what to put down or if this code would work if I did it correctly.
 
- const fullHouse('hand1')=> {
+ const fullHouseHand('hand1')=> {
     for (let i = 0; i < 5; i++) {
-        if fullHouse('hand1') === {
+        if fullHouseHand('hand1') === ('exactly one pair and one three of a kind') {
             return true
     }
-            else if fullHouse('hand1') === {
+            else if fullHouseHand('hand1') ===('Not one pair and one three of a kind')  {
             return false
             }
         
