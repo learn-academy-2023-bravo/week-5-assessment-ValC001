@@ -29,8 +29,8 @@ describe ("messageCoder", () => {
         const secretCodeWord3 = "Eccentric"
          
         expect(messageCoder(secrectCodeWord1)).toEqual("L4ck4d41s1c4l")
-        expect(messageCoder(secrectCodeWord2)).toEqual("Gobbledygook")
-        expect(messageCoder(secrectCodeWord3)).toEqual("3cc3ntr1c")
+        expect(messageCoder(secretCodeWord2)).toEqual("G0bbl3dyg00k")
+        expect(messageCoder(secretCodeWord3)).toEqual("3cc3ntr1c")
     })
 })
 
@@ -68,14 +68,14 @@ describe ("messageCoder", () => {
 
 function messageCoder(secrectCodeWord1){
     return secrectCodeWord1
-    .replace('a','4')
-    .replace('A','4')
-    .replace('e','3')
-    .replace('E','3')
-    .replace('i','1')
-    .replace('I','1')
-    .replace('o','0')
-    .replace('o','0')
+    .replaceAll('a','4')
+    .replaceAll('A','4')
+    .replaceAll('e','3')
+    .replaceAll('E','3')
+    .replaceAll('i','1')
+    .replaceAll('I','1')
+    .replaceAll('o','0')
+    .replaceAll('o','0')
 }
 const codedMessage = messageCoder(secretCodeWord1);
 console.log(codedMessage)
@@ -117,11 +117,11 @@ describe("vowelFavorerer", ()=> {
     it("Takes in an array of words and a single letter and returns an array of all the words containing that particular letter",()=>{
         
         const fruitArray = ["Mango", "Cherry", "Apricot", "Blueberry", "Peach", "Kiwi"]
-        const letterA = "a"
-        const letterE = "e"
+        const letterA = "a,A"
+        const letterE = "e,E"
 
-        expect(vowelFavorerer(letterA)).toEqual("Mango", "Apricot", "Peach")
-        expect(vowelFavorerer(letterE)).toEqual("Cherry", "Blueberry", "Peach")
+        expect(vowelFavorerer(fruitArray,letterA)).toEqual(["Mango", "Apricot", "Peach"])
+        expect(vowelFavorerer(fruitArray,letterE)).toEqual(["Cherry", "Blueberry", "Peach"])
     
     })
  })
@@ -132,12 +132,15 @@ describe("vowelFavorerer", ()=> {
 
 
  const fruitArray = ["Mango", "Cherry", "Apricot", "Blueberry", "Peach", "Kiwi"]
-  function vowelFavorerer(fruitArray){
-    const vowelFavorerer = fruitArray.filter(fruitArray => fruitArray.includes('e')).sort();
+ const letterA = "a,A"
+ const letterE = "e,E"
+  function vowelFavorerer(fruit,variable){
+    const vowelFavorerer = fruit.filter(fruit => fruit.includes(variable)).sort();
     return vowelFavorerer
   }
 
-console.log(vowelFavorerer(fruitArray));
+console.log(vowelFavorerer(fruitArray,letterE));
+console.log(vowelFavorerer(fruitArray,letterA));
 
 
 
@@ -170,32 +173,33 @@ const hand4 = [7, 2, 7, 2, 7]
 
 
 
-// describe("fullHouse", ()=> {
-//     it("takes in an array of 5 numbers and determines whether or not the array is a full house. A full house is exactly one pair and one three of a kind.",()=>{
+describe("fullHouse", ()=> {
+    it("takes in an array of 5 numbers and determines whether or not the array is a full house. A full house is exactly one pair and one three of a kind.",()=>{
         
-//         const hand1 = [5, 5, 5, 3, 3]
-//         const hand2 = [5, 5, 3, 3, 4]
-//         const hand3 = [5, 5, 5, 5, 4]
-//         const hand4 = [7, 2, 7, 2, 7]
-//         expect(fullHouse(hand1)).toEqual("true")
-//         expect(fullHouse(hand2)).toEqual("false")
-//         expect(fullHouse(hand3)).toEqual("false")
-//         expect(fullHouse(hand4)).toEqual("true")
+        const hand1 = [5, 5, 5, 3, 3]
+        const hand2 = [5, 5, 3, 3, 4]
+        const hand3 = [5, 5, 5, 5, 4]
+        const hand4 = [7, 2, 7, 2, 7]
+
+        expect(fullHouse(hand1)).toEqual(true)
+        expect(fullHouse(hand2)).toEqual(false)
+        expect(fullHouse(hand3)).toEqual(false)
+        expect(fullHouse(hand4)).toEqual(true)
     
-//     })
-//  })
+    })
+ })
 
 
 
  // b) Create the function that makes the test pass.
  // I'm confused on how to make this work, I know I have to use if/ else statements but how to make it detect pairs I don't know how.I wrote down in the () where the statement that determines if its a full house should go but don't know what to put down or if this code would work if I did it correctly.
 
- const fullHouseHand('hand1')=> {
+ const fullHouseHand=(array)=> {
     for (let i = 0; i < 5; i++) {
-        if fullHouseHand('hand1') === ('exactly one pair and one three of a kind') {
+        if (fullHouseHand[0] === ){
             return true
     }
-            else if fullHouseHand('hand1') ===('Not one pair and one three of a kind')  {
+            else  {
             return false
             }
         
